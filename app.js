@@ -18,7 +18,7 @@ dotenv.config()
 mongoose.mongoose.connect( 
   process.env.DB_CONNECTION,
   {useNewUrlParser:true},
- ()=>console.log('connected to DB'),
+ ()=>console.log('connected DB'),
 );
 app.use(express.json())
 app.listen(3000);
